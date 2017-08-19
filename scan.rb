@@ -46,7 +46,7 @@ end
 puts""
 puts "[~] Scanning for vuln wp-job-manager ...".blue
 Net::HTTP.start("#{url}", 80) {|http|
-        response = http.head('/wp-content/')
+        response = http.head('/wp-content/plugins/wp-job-manager/')
   }
 
     if response.code == "200"
@@ -254,5 +254,5 @@ Net::HTTP.start("#{url}", 80) {|http|
     else puts "[-] vuln WP Mobile Detector not found".red 
     end 
 
-  
- puts"there is more wait For the Update".orange
+ puts"" 
+ puts"there is more wait For the Update".yellow
