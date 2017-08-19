@@ -18,7 +18,7 @@ puts "                              "
 puts""
 puts""
 puts ""
-print "put your url here > "
+print "put your url here (without http://) > "
 print""
 url = gets.chomp 
 require 'net/http'
