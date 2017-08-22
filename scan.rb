@@ -18,8 +18,8 @@ puts "                              "
 puts""
 puts""
 puts ""
-print "put your url here (without http://) > "
 print""
+File.open("x.txt").each do |line| puts line
 url = gets.chomp 
 require 'net/http'
 require 'colorize'
@@ -253,6 +253,7 @@ Net::HTTP.start("#{url}", 80) {|http|
        then puts "[*] vuln WP Mobile Detector found ".green 
     else puts "[-] vuln WP Mobile Detector not found".red 
     end 
-
+    end
  puts"" 
  puts"there is more wait For the Update".yellow
+   
